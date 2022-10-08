@@ -4,6 +4,9 @@
 Spatial-Temporal Aggregated Graph Neural Network (STAGNN), combined with the global information extraction layer and local information extraction layer, to capture the global and local information from dynamic and directed shared bike network. 
 
 
+## Frame of STAGNN
+
+![dataset](/Figure/model.jpg)
 
 
 ## Dataset
@@ -16,8 +19,6 @@ We conduct experiments on the four real-world datasets. Each dataset is divided 
 
 
 
-
-
-
 ## Result
 The experiment results for predicting the number of shared bikes as follows. We can see that STAGNN outperforms all baseline methods in two evaluation metrics on four datasets with different time slots.
+![dataset](/Figure/result.jpg)
