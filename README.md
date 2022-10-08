@@ -8,7 +8,7 @@ Spatial-Temporal Aggregated Graph Neural Network (STAGNN), combined with the glo
 
 ## Dataset
 We verify the performance of STAGNN on four real-world datasets: the Citi dataset, the Divvy dataset, the Captial dataset, and the Bay dataset.
-
+![dataset](/Figure/dataset.jpg)
 
 
 ## Train and Test
