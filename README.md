@@ -24,7 +24,20 @@ Due to datasets is very large, you could download the dataset at:https://pan.bai
 We conduct experiments on the four real-world datasets. Each dataset is divided into training, validation, and test sets according to 7:2:1. We generate the time sequence by sliding a window of width 7 + 1, where 7 represents the number of historical snapshots at the same time, and 1 represents the predicted number of times. In STAGNN, we set the graph hidden dimensions to 10, the graph attention head to 2, and the negative slope of all Leakyrelu functions to 0.01. We use three hidden temporal convolution layers, and the hidden size is the number of stations. The Adam optimizer is utilized to train the model. The maximum training iteration is set to 200.
 
 
+## Prerequisites
+Our code is based on Python3.8. There are a few dependencies to run the code. The major libraries are listed as follows:
+- torch-geometric  2.0.4
+- torch 1.11.0
+- scikit-learn 1.0.2
+
+
 
 ## Result
 The experiment results for predicting the number of shared bikes as follows. We can see that STAGNN outperforms all baseline methods in two evaluation metrics on four datasets with different time slots.
 ![dataset](/Figure/result.jpg)
+
+## Updates
+
+Oct. 8, 2022
+- The STAGNN code
+- The STAGNN data
