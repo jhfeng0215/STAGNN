@@ -9,7 +9,6 @@ from torch_geometric.data import DataListLoader
 import pandas as pd
 from datetime import date,timedelta
 
-# csv 格式
 # ['start', 'end', 'node_feature', 'weather_feature', 'time']
 
 def read_Data(df,pdt_time):
@@ -80,10 +79,6 @@ def load_Data(train_node_feature,val_node_feature,tst_node_feature,device):
 
 
 def split_Data(df,batch_size,device,day,hour,week):
-
-    # 切分数据集
-
-
 
     df_train = df[0: int(len(df)*0.7)]
     df_validate = df[0:int(len(df)*0.9)]
