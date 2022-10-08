@@ -5,6 +5,8 @@ Spatial-Temporal Aggregated Graph Neural Network (STAGNN), combined with the glo
 
 
 ## Frame of STAGNN
+The frame of STAGNN is shown as follows. The key component of STAGNN is the spatial-temporal block,it could be divided into the global information extraction layer and the local information extraction layer.The global information extraction layer includes the dynamic graph attention network and Temporal Convolutional Network. The former could identify the dynamic spatial correlation among stations, and the latter is utilized to capture the long temporal information. The shared GNN and shared MLP form the static information extraction layer. The shared GNN aims to capture the local spatial dependencies between stations, and the shared MLP tries to identify the near temporal information.
+
 
 ![dataset](/Figure/model.jpg)
 
